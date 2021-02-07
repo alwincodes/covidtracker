@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card} from 'react-bootstrap';
+import {Button, Card} from 'react-bootstrap';
 import StateData from './Statedata';
 
 import Axios from 'axios';
@@ -25,7 +25,7 @@ class India extends Component{
                 <div className="col-md-12">
                     <div className="row">
                         <div className="col-md-3">
-                        <Card className = "badge badge-primary"style={{ width: '18rem' }}>
+                        <Card className = "badge badge-primary"style={{ width: '15rem' }}>
                         <Card.Body className="text-center">
                             <Card.Title>TOTAL CASES</Card.Title>
                             <h3>{this.state.data.cases}</h3>
@@ -34,7 +34,7 @@ class India extends Component{
                         </div>
 
                         <div className="col-md-3">
-                        <Card className = "badge badge-warning"style={{ width: '18rem' }}>
+                        <Card className = "badge badge-warning"style={{ width: '15rem' }}>
                         <Card.Body className="text-center">
                             <Card.Title>ACTIVE CASES</Card.Title>
                             <h3>{this.state.data.active}</h3>
@@ -43,7 +43,7 @@ class India extends Component{
                         </div>
 
                         <div className="col-md-3">
-                        <Card className = "badge badge-success"style={{ width: '18rem' }}>
+                        <Card className = "badge badge-success"style={{ width: '15rem' }}>
                         <Card.Body className="text-center">
                             <Card.Title>TOTAL RECOVERED</Card.Title>
                             <h3>{this.state.data.recovered}</h3>
@@ -52,7 +52,7 @@ class India extends Component{
                         </div>
 
                         <div className="col-md-3">
-                        <Card className = "badge badge-danger"style={{ width: '18rem' }}>
+                        <Card className = "badge badge-danger"style={{ width: '15rem' }}>
                         <Card.Body className="text-center">
                             <Card.Title>TOTAL DEATHS</Card.Title>
                             <h3>{this.state.data.deaths}</h3>
@@ -62,7 +62,7 @@ class India extends Component{
                     </div>
                 </div>
                 <div className="col-md-12">
-                    <h3 className="text-center p-2">[Total number of test done : {this.state.data.tests}]</h3>
+                    <Button variant="primary" className="p-2 m-2">Total number of test done : {this.state.data.tests}</Button>
                     <StateData/>
                 </div>
             </div>

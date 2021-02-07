@@ -22,12 +22,11 @@ class StateData extends Component{
                 <div className="col-md-12">
                 <Accordion>
                     {keys.map((key,k)=>{
-                        console.log(k , key)
                         if(k === 0){
                             return("")
                         }
                         let districts = this.state.stateData[key].districtData
-                        let district_Keys = Object.keys(districts);
+                        //let district_Keys = Object.keys(districts);
 
                         let total_active = 0;
                         let total_confirmed = 0;
@@ -49,7 +48,7 @@ class StateData extends Component{
                             <Card>
                             <Card.Header>
                             <Accordion.Toggle as={Button} variant="primary" eventKey={k}>
-                                {key}  <span className="btn-dark p-1 mr-2">Total Cases - {total_confirmed} </span><span className="btn-dark p-1 mr-2"> Active - {total_active}</span><span className="btn-dark p-1 mr-2">Recovered - {total_recover} </span> <span className="btn-dark p-1 mr-2">Death - {total_deaths}</span>
+                                {key}  <span className=" p-1 mr-2">Total Cases - {total_confirmed} </span><span className=" p-1 mr-2"> Active - {total_active}</span><span className=" p-1 mr-2">Recovered - {total_recover} </span> <span className=" p-1 mr-2">Death - {total_deaths}</span>
                             </Accordion.Toggle>
                             </Card.Header>
                             <Accordion.Collapse eventKey={k}>

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 class Header extends Component{
     render(){
         return(
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
                 <Navbar.Brand href="/">Covid Tracker</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
